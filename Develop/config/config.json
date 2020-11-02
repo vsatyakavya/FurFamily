@@ -1,7 +1,11 @@
 {
   "development": {
     "username": "root",
+<<<<<<< HEAD
     "password": "Iloveramen123!",
+=======
+    "password": "cristina21",
+>>>>>>> 89cd8acc6061846c0a74aa9884c098bcc607fb3e
     "database": "furfamily_db",
     "host": "127.0.0.1",
     "dialect": "mysql"
