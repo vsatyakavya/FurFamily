@@ -1,6 +1,6 @@
 
 
-  $.post("/api/pets",)
+
 
 $(document).ready(function() {
     petname,petage , petbreed
