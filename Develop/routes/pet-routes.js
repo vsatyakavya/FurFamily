@@ -6,7 +6,7 @@ module.exports = function(app) {
    app.post("/api/pets",function(req,res){
     db.Pet.create(req.body)
     .then(function(){
-        res.redirect(307 , "api/yourPets")
+        // res.redirect(307 , "api/yourPets/:id")
     }).catch(function(err){
         res.status(401).json(err);
     })
@@ -14,7 +14,7 @@ module.exports = function(app) {
 
 
   app.get("/api/yourPets/:id",function(req,res){
-    db.pet.findAll({
+    db.Pet.findAll({
       where :{
         userId :req.params.id
       }
@@ -22,6 +22,19 @@ module.exports = function(app) {
         res.json(dbPet)
     })
   })
+
+
+  app.delete("/api/pets/:id", function(req, res){
+    db.Pet.destroy({
+      where :{
+        id : req.params.id
+      }
+    }).then(function(dbPet){
+      res.json(dbPet);
+    })
+  })
 };
+
+
 
 
