@@ -29,34 +29,22 @@ module.exports = function(app) {
   });
 
   app.get("/yourpets", function(req, res) {
-    // If the user already has an account send them to the members page
-    if (req.user) {
-      res.redirect("/members");
-    }
+    
     res.sendFile(path.join(__dirname, "../public/yourpets.html"));
   });
 
   app.get("/grooming", function(req, res) {
-    // If the user already has an account send them to the members page
-    if (req.user) {
-      res.redirect("/members");
-    }
+  
     res.sendFile(path.join(__dirname, "../public/grooming.html"));
   });
 
   app.get("/training", function(req, res) {
-    // If the user already has an account send them to the members page
-    if (req.user) {
-      res.redirect("/members");
-    }
+   
     res.sendFile(path.join(__dirname, "../public/training.html"));
   });
 
   app.get("/petform", function(req, res) {
-    // If the user already has an account send them to the members page
-    if (req.user) {
-      res.redirect("/members");
-    }
+   
     res.sendFile(path.join(__dirname, "../public/petform.html"));
   });
 
