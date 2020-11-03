@@ -44,11 +44,31 @@
 
   <div id="login">
     <form action="/action_page.php">
-      <label for="email"></label><br>
-      <input type="text" id="email" name="email" placeholder="Email"><br>
-      <label for="lname"></label><br>
-      <input type="text" id="pasW" name="pasW" placeholder="Password"><br><br>
-      <input type="submit" value="Sign Up">
+        <fieldset>
+     
+          <p>
+            <label for="petName"></label><br>
+      <input type="text" id="petName" name="petName" placeholder="Name of Pet"><br>
+          </p>
+          <p>
+            <label for="petAge"></label><br>
+      <input type="text" id="petAge" name="petAge" placeholder="Age of Pet"><br>
+          </p>
+
+          <p>
+            <label for="petBreed"></label><br>
+      <input type="text" id="petBreed" name="petBreed" placeholder="Breed of Pet"><br>
+          </p>
+          
+          <label for="petImg"></label><br>
+      <input type="file" id="petImg" name="petImg" placeholder="Insert an image of your pet if you'd like"><br>
+      <p>
+        <img src="">
+          </p>
+          <p>
+            <input type="submit" value="Submit">
+          </p>
+        </fieldset>
     </form> 
 
   </div>
