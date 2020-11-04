@@ -51,7 +51,5 @@ module.exports = function (app) {
       });
     }
   });
-
-  //Dog of the day API routes
   
 };
