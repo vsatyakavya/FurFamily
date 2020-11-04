@@ -21,6 +21,7 @@ $("#submit").on("click", function(event){
   .then(data=>{
       console.log(data);
       alert("adding new pet")
+      // window.location.reload("/yourpets");
   });
  
 
