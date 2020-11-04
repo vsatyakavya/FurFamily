@@ -3,6 +3,16 @@ form.login {
   margin-top: 50px;
 }
 
+#welcomeBanner {
+  margin: 20px
+}
+
+#dogOfTheDayCard {
+  
+}
+
+#checklistCard {
+  
 login {
   background-color: lightgray;
   width: 300px;
