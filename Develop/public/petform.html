@@ -34,13 +34,45 @@
   <div class="container">
     <div class="row">
       <div class="col-md-6 col-md-offset-3">
-        <h2>Welcome <span class="member-name"></span></h2>
+      
+        
+          <form>
+              <fieldset>
+           
+                <p>
+                  <label for="petName"></label><br>
+            <input type="text" id="petName" name="petName" placeholder="Name of Pet"><br>
+                </p>
+                <p>
+                  <label for="petAge"></label><br>
+            <input type="text" id="petAge" name="petAge" placeholder="Age of Pet"><br>
+                </p>
+      
+                <p>
+                  <label for="petBreed"></label><br>
+            <input type="text" id="petBreed" name="petBreed" placeholder="Breed of Pet"><br>
+                </p>
+                
+                <label for="petImg"></label><br>
+            <input type="file" id="petImg" name="petImg" placeholder="Insert an image of your pet if you'd like"><br>
+            <p>
+              <img src="">
+                </p>
+                
+               <button type="submit" class="btn btn-success submit btn-sm" id= "submit">Add Pet</button> 
+              </fieldset>
+          </form> 
+      
+        
       </div>
     </div>
   </div>
+ 
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script type="text/javascript" src="js/members.js"></script>
+  <script type="text/javascript" src="js/petfform.js"></script>
+
+ 
 
 </body>
 
