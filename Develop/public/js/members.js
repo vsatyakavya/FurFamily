@@ -17,6 +17,8 @@ $(document).ready(function() {
     $('#dogTemperment').text(response[0].breeds[0].temperament)
     $('#lifeSpan').text(response[0].breeds[0].life_span)
 
+    //const imageURL = response.
+
   });
   
 
