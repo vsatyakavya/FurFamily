@@ -5,14 +5,16 @@
   <title>Passport Authentication</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+    integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
   <link href="stylesheets/style.css" rel="stylesheet">
 </head>
 
 <body>
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <a class="navbar-brand" href="/members">Fur Family</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+      aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
@@ -23,26 +25,61 @@
       </div>
     </div>
   </nav>
-  
+
   <div class="container">
     <div class="row">
       <div class="col-md-12">
         <div class="card mb-2">
-          <h3 class="card-header text-center">Training Basics</h3>
+          <h3 class="card-header text-center">Leash Training</h3>
           <div class="card-body">
             <div class="row">
               <div class="col-md-4">
-                <img src="" https://placehold.it/125x125"" alt="Youtube Video" class="img-thumbnail" class="img-fluid">
+                <div id="player" class="embed-responsive embed-responsive-1by1"></div>
               </div>
               <div class="col-md-8">
-                <div class="row">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit laboriosam
-                  provident
-                  impedit optio consectetur aperiam illum alias, vel ipsam commodi, doloremque incidunt modi ab
-                  voluptatem.
-                  Quod voluptas deleniti repudiandae et.</div>
-                <div class="row">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est quaerat vero praesentium
-                  ipsum, optio suscipit quod perferendis ratione provident ut odit rerum! Suscipit aut est dolore esse?
-                  Totam, quibusdam? Sit.</div>
+                <div class="row">A good structured walk is the best training tool available to all dog owners.
+                  Unfortunately so many can’t take their dog on an enjoyable walk because of excessive pulling on the
+                  leash. Here are a few very basic things that any dog owner can start working on to teach their dog to
+                  walk nicely on a loose leash.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-12">
+        <div class="card mb-2">
+          <h3 class="card-header text-center">Potty Training</h3>
+          <div class="card-body">
+            <div class="row">
+              <div class="col-md-4">
+                <div id="player1" class="embed-responsive embed-responsive-1by1"></div>
+              </div>
+              <div class="col-md-8">
+                <div class="row">Potty training your dog can be a frustrating task but patience and consistency can be
+                  great tools for a better potty training experience.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-12">
+        <div class="card mb-2">
+          <h3 class="card-header text-center">Cool Dog Tricks </h3>
+          <div class="card-body">
+            <div class="row">
+              <div class="col-md-4">
+                <div id="player2" class="embed-responsive embed-responsive-1by1"></div>
+              </div>
+              <div class="col-md-8">
+                <div class="row">For this list we’re looking at tricks that any dog lover and owner can teach his or her
+                  canine companion. Some of the tricks featured are definitely advanced, but are still achievable with
+                  time, patience, and lots of practice!</div>
               </div>
             </div>
           </div>
@@ -52,7 +89,9 @@
   </div>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://apis.google.com/js/api.js"></script>
   <script type="text/javascript" src="js/members.js"></script>
+  <script type="text/javascript" src="js/training.js"></script>
 
 </body>
 
