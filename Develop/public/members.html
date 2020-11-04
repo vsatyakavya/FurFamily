@@ -20,23 +20,33 @@
         <a class="nav-link" href="/yourpets">Your Pets</a>
         <a class="nav-link" href="/grooming">Grooming</a>
         <a class="nav-link" href="/training">Training</a>
+        <a class="nav-link" href="/logout">Logout</a>
       </div>
     </div>
   </nav>
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <a class="navbar-brand" href="/logout">
-        Logout
-      </a>
-    </div>
-  </div>
-</nav>
+ 
   <div class="container">
     <div class="row">
-      <div class="col-md-6 col-md-offset-3">
+      <div id="welcomeBanner" class="card col-md-12 text-center">
         <h2>Welcome <span class="member-name"></span></h2>
       </div>
     </div>
+    <div class="row">
+        <div id="dogOfTheDayCard" class="card col-md-6 text-center">
+          <h4>Doggy of the Day!</h4>
+                <h5 id="dogName"></h5>
+                <p id="dogTemperment"></p>
+                <p id="lifeSpan"></p>
+        </div>
+        <div id="checklistCard" class="card col-md-6">
+          <h4>Hello</h4>
+        </div>
+      </div>
+      <div class="row">
+        <div class="card col-md-12">
+          <h2>Hello</h2>
+        </div>
+      </div>
   </div>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
