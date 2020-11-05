@@ -4,8 +4,22 @@ form.login {
 }
 
 #welcomeBanner {
-  margin: 20px
+  margin: 25px 0px 25px 0px;
 }
 
+#doggyImage{
+  max-width: 150px;
+  max-width: 150px;
+}
 
+label {
+  display: inline;
+}
 
+input[type=checkbox] {
+  display: inline;
+}
+
+input {
+  margin:10px;
+}

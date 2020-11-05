@@ -5,7 +5,6 @@ const express = require("express");
 const https = require("https");
 
 
-
 module.exports = function (app) {
   // Using the passport.authenticate middleware with our local strategy.
   // If the user has valid login credentials, send them to the members page.
@@ -17,7 +16,7 @@ module.exports = function (app) {
   // Route for signing up a user. The user's password is automatically hashed and stored securely thanks to
   // how we configured our Sequelize User Model. If the user is created successfully, proceed to log the user in,
   // otherwise send back an error
-  app.post("/api/signup", function (req, res) {
+  app.post("/api/signup", function(req, res) {
     db.User.create({
       firstName: req.body.firstName,
       lastName: req.body.lastName,
@@ -54,7 +53,5 @@ module.exports = function (app) {
       });
     }
   });
-
-  //Dog of the day API routes
   
 };
