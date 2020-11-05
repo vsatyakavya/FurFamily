@@ -35,11 +35,13 @@
     </div>
     <div class="row">
       <div id="dogOfTheDayCard" class="card col-md-6 text-center">
-        <div class="card-header">
+        <div id="dogOfTheDayTitle" class="card-header">
           Doggy of the Day!
         </div>
-        <img id="dogImage">
+        <div id="dogImage"> 
+        </div>
         <h5 id="dogName"></h5>
+        <p id="breedGroup"></p>
         <p id="dogTemperment"></p>
         <p id="lifeSpan"></p>
       </div>
@@ -48,7 +50,7 @@
           Daily Dog Checklist
         </div>
         <div class=card-body>
-          <div class="item">
+          <div id="checkboxList" class="item">
             <input type="checkbox" id="fedDogCheckbox" aria-label="Checkbox for if you fed the dogs today">
             <label for="fedDogCheckBox">Have you fed your dog today?</label>
           </div>
