@@ -1,10 +1,11 @@
-{
-  "development": {
-    "username": "root",
-    "password": "DanielMySQL1@",
-  
-    "database": "furfamily_db",
-    "host": "127.0.0.1",
+require('dotenv').config();
+module.exports = {
+  development: {
+    username: process.env.DBUSER,
+    "password": process.env.DBPASSWORD,
+    "database":  process.env.DATABASE,
+    "host":  process.env.DBHOST,
+    port :3306,
     "dialect": "mysql"
   },
   "test": {
@@ -21,4 +22,12 @@
     "host": "127.0.0.1",
     "dialect": "mysql"
   }
+
 }
+
+
+
+
+
+
+

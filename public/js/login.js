@@ -32,9 +32,16 @@ $(document).ready(function() {
         window.location.replace("/members");
         // If there's an error, log the error
       })
-      .catch(function(err) {
-        console.log(err);
+      .catch(function(err){
+        //  window.location.href = "/signup";
+        handleLoginErr(err)
       });
+  }
+
+  function handleLoginErr(err) {
+    
+    $("#alert .msg").text("Please enter valid credentials.");
+    $("#alert").fadeIn(1);
   }
 });
 

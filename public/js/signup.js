@@ -44,7 +44,7 @@ $(document).ready(function() {
   }
 
   function handleLoginErr(err) {
-    $("#alert .msg").text(err.responseJSON);
+    $("#alert .msg").text("You already have an account, please sign in.");
     $("#alert").fadeIn(500);
   }
 });
