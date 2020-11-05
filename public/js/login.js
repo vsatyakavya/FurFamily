@@ -34,6 +34,10 @@ $(document).ready(function() {
       })
       .catch(function(err) {
         console.log(err);
+        console.log(err.responseJSON);
+        console.log(err.message);
+        
+        // window.location.href = "/signup";
       });
   }
 });
