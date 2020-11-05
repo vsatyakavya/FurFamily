@@ -1,7 +1,7 @@
 {
   "development": {
     "username": "root",
-    "password": "kavya",
+    "password": "DanielMySQL1@",
   
     "database": "furfamily_db",
     "host": "127.0.0.1",
