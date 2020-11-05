@@ -1,6 +1,8 @@
 // Requiring our models and passport as we've configured it
 var db = require("../models");
 var passport = require("../config/passport");
+const express = require("express");
+const https = require("https");
 
 
 module.exports = function (app) {
