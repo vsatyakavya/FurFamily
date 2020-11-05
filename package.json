@@ -13,18 +13,11 @@
   "license": "ISC",
   "dependencies": {
     "bcryptjs": "2.4.3",
-<<<<<<< HEAD:Develop/package.json
-    "express": "^4.17.1",
-    "express-session": "^1.17.1",
-    "mysql2": "^2.2.5",
-    "passport": "^0.4.1",
-=======
     "dotenv": "^8.2.0",
     "express": "^4.17.0",
     "express-session": "^1.16.1",
     "mysql2": "^1.6.5",
     "passport": "^0.4.0",
->>>>>>> c6af18e083d9ffaff98eb095e7c0b0f2d547a8a3:package.json
     "passport-local": "^1.0.0",
     "sequelize": "^6.3.5"
   }
