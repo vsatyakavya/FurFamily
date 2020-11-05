@@ -41,7 +41,7 @@ $(document).ready(function () {
            
            <div class ="row">
            <div class ="col-md-2">
-           <img src="furfamily.jpg" alt="Pet Image" class="img-thumbnail" class="img-fluid" class="list-inline-item">
+            <img src="./image/furfamily.jpg" alt="Pet Image" class="img-thumbnail" class="img-fluid" class="list-inline-item">
 
            </div>
            <div class = "col-md-8">
