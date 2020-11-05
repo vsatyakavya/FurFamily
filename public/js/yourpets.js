@@ -41,7 +41,7 @@ $(document).ready(function () {
            
            <div class ="row">
            <div class ="col-md-2">
-           <img src="https://placehold.it/125x125" alt="Pet Image" class="img-thumbnail" class="img-fluid" class="list-inline-item">
+           <img src="public\furfamily.png" alt="Pet-Image" class="img-thumbnail" class="img-fluid" class="list-inline-item">
            </div>
            <div class = "col-md-8">
             <li class="list-inline-item" style="font-size:20px">Pet Name : ${petName}</li>
