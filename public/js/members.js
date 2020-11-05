@@ -81,8 +81,24 @@ $(document).ready(function() {
 // }).then(function (response){
 //   console.log(response)
 //   // $("#quote")
-// })
   
 
 
+  const settings = {
+    "async": true,
+    "crossDomain": true,
+    "url": "https://type.fit/api/quotes",
+    "method": "GET"
+  }
+  
+  $.ajax(settings).done(function (response) {
+    const data = JSON.parse(response);
+    var randomnumber = Math.floor(Math.random() * (98 + 1));
+    console.log(data)
+    $("#quote").text(data[randomnumber].text);
+  });
+
+
+
 });
+

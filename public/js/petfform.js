@@ -20,7 +20,7 @@ $("#submit").on("click", function(event){
   $.post("/api/pets",newPet)
   .then(data=>{
       console.log("this is data"+data);
-      alert("adding new pet")
+      
       // window.location.replace("/yourpets");
       window.location.href = "/yourpets";
   });
