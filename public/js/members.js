@@ -48,29 +48,9 @@ $(document).ready(function() {
 
 
 //Ajax call for quote API
-var unirest = require("unirest");
-var req = unirest("GET", "https://healthruwords.p.rapidapi.com/v1/quotes/");
-
-req.query({
-	"id": "731",
-	"t": "Wisdom",
-	"maxR": "1",
-	"size": "medium"
-});
-
-req.headers({
-	"x-rapidapi-host": "healthruwords.p.rapidapi.com",
-	"x-rapidapi-key": "cdb41f041dmsh90d1d3cefd5ceaep123b31jsn60b2cf4cb632",
-	"useQueryString": true
-});
 
 
-req.end(function (res) {
-	if (res.error) throw new Error(res.error);
 
-	console.log(res.body);
-}).then(function (response){
-  console.log(response)
   // $("#quote")
 
 //Randomly generated Quote Card
@@ -87,6 +67,8 @@ req.end(function (res) {
     console.log(data)
     $("#quote").text(data[randomnumber].text);
   });
+
 });
-});
+
+
 
