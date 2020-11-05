@@ -12,10 +12,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-<<<<<<< HEAD
-=======
     "bcrypt": "^5.0.0",
->>>>>>> f4602af6c3dccd479dc58fb08e24580c149f09a0
     "bcryptjs": "^2.4.3",
     "dotenv": "^8.2.0",
     "express": "^4.17.1",

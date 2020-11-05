@@ -1,9 +1,6 @@
 // Requiring our models and passport as we've configured it
 var db = require("../models");
 var passport = require("../config/passport");
-const express = require("express");
-const https = require("https");
-
 
 
 module.exports = function (app) {
@@ -17,7 +14,7 @@ module.exports = function (app) {
   // Route for signing up a user. The user's password is automatically hashed and stored securely thanks to
   // how we configured our Sequelize User Model. If the user is created successfully, proceed to log the user in,
   // otherwise send back an error
-  app.post("/api/signup", function (req, res) {
+  app.post("/api/signup", function(req, res) {
     db.User.create({
       firstName: req.body.firstName,
       lastName: req.body.lastName,
@@ -54,7 +51,5 @@ module.exports = function (app) {
       });
     }
   });
-
-  //Dog of the day API routes
   
 };
