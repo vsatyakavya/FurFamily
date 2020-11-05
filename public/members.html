@@ -5,14 +5,16 @@
   <title>Passport Authentication</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+    integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
   <link href="stylesheets/style.css" rel="stylesheet">
 </head>
 
 <body>
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <a class="navbar-brand" href="/members">Fur Family</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+      aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
@@ -24,30 +26,61 @@
       </div>
     </div>
   </nav>
- 
+
   <div class="container">
     <div class="row">
-      <div id="welcomeBanner" class="card col-md-12 text-center">
+      <div id="welcomeBanner" class="card col-md-12 ml-4 text-center">
         <h2>Welcome <span class="member-name"></span></h2>
       </div>
     </div>
     <div class="row">
-        <div id="dogOfTheDayCard" class="card col-md-6 text-center">
-          <h4>Doggy of the Day!</h4>
-                <h5 id="dogName"></h5>
-                <p id="dogTemperment"></p>
-                <p id="lifeSpan"></p>
+      <div id="dogOfTheDayCard" class="card col-md-6 text-center">
+        <div id="dogOfTheDayTitle" class="card-header">
+          Doggy of the Day!
         </div>
-        <div id="checklistCard" class="card col-md-6">
-          <h4>Hello</h4>
+        <div id="dogImage"> 
+        </div>
+        <h5 id="dogName"></h5>
+        <p id="breedGroup"></p>
+        <p id="dogTemperment"></p>
+        <p id="lifeSpan"></p>
+      </div>
+      <div id="checklistCard" class="card col-md-6 text-center">
+        <div class="card-header text-center">
+          Daily Dog Checklist
+        </div>
+        <div class=card-body>
+          <div id="checkboxList" class="item">
+            <input type="checkbox" id="fedDogCheckbox" aria-label="Checkbox for if you fed the dogs today">
+            <label for="fedDogCheckBox">Have you fed your dog today?</label>
+          </div>
+          <div class="item">
+            <input type="checkbox" id="DogGroomCheckbox" aria-label="Checkbox for if you've groomed your dog today">
+            <label for="DogGroomCheckbox">Have you groomed your dog today?</label>
+          </div>
+          <div class="item">
+            <input type="checkbox" id="DogTrainingCheckbox" aria-label="Checkbox for you have trained your dog today">
+            <label for="DogTrainingCheckbox">Have you practiced training your dog today?</label>
+          </div>
+          <div class="item">
+            <input type="checkbox" id="DogSupplementCheckbox"
+              aria-label="Checkbox for if you gave your dog their daily supplements">
+            <label for="DogSupplementCheckBox">Have you gave your dog supplements today?</label>
+          </div>
+          <div class="item">
+            <input type="checkbox" id="DogWalkCheckbox" aria-label="Checkbox for if you have taken your dog for a walk">
+            <label for="DogWalkCheckBox">Have you took your dog for a walk today?</label>
+          </div>
         </div>
       </div>
+    </div>
       <div class="row">
-        <div class="card col-md-12">
+        <div class="card col-md-12 text-center">
           <h2>Quote of the day</h2>
           <div id="quote"></div>
         </div>
       </div>
+    
   </div>
 
   <div class="card-footer text-muted text-center">

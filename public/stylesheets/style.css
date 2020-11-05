@@ -5,18 +5,22 @@ form.login {
 }
 
 #welcomeBanner {
-  margin: 20px
+  margin: 25px 0px 25px 0px;
 }
 
 
 
-#dogOfTheDayCard {
+/* #dogOfTheDayCard {
   
+} */
+
+#doggyImage{
+  max-width: 150px;
+  max-width: 150px;
 }
 
-#checklistCard {
-  
-login {
+
+.login {
   background-color: lightgray;
   width: 300px;
   border: 15px solid black;
@@ -24,3 +28,21 @@ login {
   margin: 20px;
 }
 
+label {
+  display: inline;
+}
+
+input[type=checkbox] {
+  display: inline;
+}
+
+input {
+  margin:10px;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px;
+  
+}
