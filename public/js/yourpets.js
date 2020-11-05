@@ -1,6 +1,6 @@
 
 $(document).ready(function () {
-
+     console.log("this file is active");
      let id;
      $.get("/api/user_data").then(function (data) {
           id = data.id;
@@ -9,15 +9,24 @@ $(document).ready(function () {
 
      });
      const wellSection = $("#well-section");
+     const text =$("#content");
 
      function passId(id) {
           console.log("id is" + id);
           $.get("api/yourPets/" + id).then(function (pets) {
-               console.log(pets);
-               pets.forEach((pet, index) => {
-                    wellSection.append(renderPet({ pet, index }));
-                   
-               })
+                if(!pets.length){
+                     text.css("display" ,"block" )
+                }
+                else{
+                     text.css("display" , "none");
+                    pets.forEach((pet, index) => {
+                         wellSection.append(renderPet({ pet, index }));
+                        
+                    })
+                     
+                }
+               
+              
           })
      }
 
@@ -40,7 +49,7 @@ $(document).ready(function () {
            <li class="list-inline-item" style="font-size:20px">Pet Breed : ${petBreed}</li>
            </div>
            <div class ="col-md-2">
-           <button type="submit" class="btn btn-danger btn-sm" id ="delete"  data-id = ${id}><span class="fas fa-trash"></span>Delete Pet</button>
+           <button class="btn btn-danger btn-sm" id="delete"  data-id = ${id}><span class="fas fa-trash"></span>Delete Pet</button>
              </div>
          </div>
           </div>
@@ -48,16 +57,11 @@ $(document).ready(function () {
              </ul>
         
              </div> 
-             `,
+             `
             
-             
-             
-             
-             
-             
-             );
+               );
  }
-     $("#delete").on("click", function(){
+     $(document).on("click","#delete", function(){
           var id;
        console.log("this is and id of petid" +id);
 
@@ -71,7 +75,8 @@ $(document).ready(function () {
             // On success, run the following code
             .then(function() {
               console.log("Deleted Successfully!");
-            });
+              window.location.reload("/yourpets");
+            })
         
   })   
 
