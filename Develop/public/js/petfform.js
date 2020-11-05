@@ -30,9 +30,6 @@ $("#submit").on("click", function(event){
   $("#petBreed").val("");
   }
 
- 
-
-
   
 
 

@@ -17,9 +17,65 @@ $(document).ready(function() {
     $('#dogTemperment').text(response[0].breeds[0].temperament)
     $('#lifeSpan').text(response[0].breeds[0].life_span)
 
-    //const imageURL = response.
+    // const imgURL = response[0].url;
+    //const image = $("<img>").attr("src", imageURL);
 
+    // $('#dogImage').html('<img src='+imgURL+'height="64px" width="64px">');
+
+    //$('#dogImage').append('<img src="'+response[0].url+'" height="64px" width="64px">');
+  
   });
+
+  //Persisting checkboxes
+  const checkboxValues = 
+  JSON.parse(localStorage.getItem('checkboxValues')) || {},
+    $checkboxes = $("#checklistCard :checkbox");
+
+    $checkboxes.on("change", function(){
+      $checkboxes.each(function(){
+        checkboxValues[this.id] =
+        this.checked;
+      });
+
+      localStorage.setItem("checkboxValues",
+      JSON.stringify(checkboxValues));
+    });
+
+    $.each(checkboxValues, function(key, value){
+      $("#" + key).prop('checked', value);
+    });
+
+
+
+
+
+
+var unirest = require("unirest");
+
+var req = unirest("GET", "https://healthruwords.p.rapidapi.com/v1/quotes/");
+
+req.query({
+	"id": "731",
+	"t": "Wisdom",
+	"maxR": "1",
+	"size": "medium"
+});
+
+req.headers({
+	"x-rapidapi-host": "healthruwords.p.rapidapi.com",
+	"x-rapidapi-key": "cdb41f041dmsh90d1d3cefd5ceaep123b31jsn60b2cf4cb632",
+	"useQueryString": true
+});
+
+
+req.end(function (res) {
+	if (res.error) throw new Error(res.error);
+
+	console.log(res.body);
+}).then(function (response){
+  console.log(response)
+  // $("#quote")
+})
   
 
 
