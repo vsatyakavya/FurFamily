@@ -18,15 +18,18 @@ function onYouTubeIframeAPIReady() {
         }
     });
     secondPlayer = new YT.Player('player1', {
+        autoplay: 0,
         height: 'max',
         width: 'max',
         videoId: "X6k0zkRUt_Q",
+        autoplay: 0,
         events: {
             'onReady': onPlayerReady,
             'onStateChange': onPlayerStateChange
         }
     });
     thirdPlayer = new YT.Player('player2', {
+        autoplay: 0,
         height: 'max',
         width: 'max',
         videoId: "soY1HbsJDz8",
@@ -41,7 +44,7 @@ function onYouTubeIframeAPIReady() {
 
 
         function onPlayerReady(event) {
-        event.target.playVideo();
+        
     }
 
 var done = false;
