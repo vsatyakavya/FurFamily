@@ -10,32 +10,62 @@
   <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
     integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
   <link href="stylesheets/style.css" rel="stylesheet">
+  <style>
+      body{
+      background-image: url("./image/dogfur.jpg");
+      
+  background-repeat: no-repeat;
+  background-attachment: fixed;  
+  background-size: cover;
+    }
+  </style>
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="/members">Fur Family</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
-      aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
+ 
+  <nav class="navbar navbar-expand-lg navbar-dark bg-info">
+    <a class="navbar-brand" href="/members">fur family</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-      <div class="navbar-nav">
-        <a class="nav-link" href="/yourpets">Your Pets</a>
-        <a class="nav-link" href="/grooming">Grooming</a>
-        <a class="nav-link" href="/training">Training</a>
 
-      </div>
+
+    <!-- Collapsible button -->
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav ml-auto">
+
+            <!-- The links of our navbar -->
+            <li class="nav-item ">
+                <a class="nav-link" href="/yourpets">Your Pets<span class="sr-only">(current)</span></a>
+            </li>
+
+            <li class="nav-item ">
+                <a class="nav-link" href="/grooming">Grooming</a>
+            </li>
+
+
+            <li class="nav-item active">
+
+                <a class="nav-link" href="/training">Training</a>
+
+            </li>
+            <li class="nav-item active">
+
+                <a class="nav-link" href="/logout">Logout</a>
+
+            </li>
+        </ul>
     </div>
-  </nav>
+</nav>
 
   <div class="container">
     <div class="row">
       <div class="col-md-12">
-        <div class="card mb-2">
+        <div class="card mb-2" style="background-color:rgb(221, 230, 229);">
           <h3 class="card-header text-center">Pet</h3>
           <div  class="card-body" id="well-section">
-            <h1 id ="content">You can see your pets details here</h1>
+            <h1 id ="content" style = "text-align: center; font-family: 'Times New Roman', Times, serif;">You can see your pets details here</h1>
             <!-- code goes here -->
             <br>
 
