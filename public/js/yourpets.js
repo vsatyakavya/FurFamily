@@ -41,7 +41,8 @@ $(document).ready(function () {
            
            <div class ="row">
            <div class ="col-md-2">
-           <img src="https://placehold.it/125x125" alt="Pet Image" class="img-thumbnail" class="img-fluid" class="list-inline-item">
+            <img src="./image/furfamily.jpg" alt="Pet Image" class="img-thumbnail" class="img-fluid" class="list-inline-item">
+
            </div>
            <div class = "col-md-8">
             <li class="list-inline-item" style="font-size:20px">Pet Name : ${petName}</li>
@@ -85,6 +86,7 @@ $(document).ready(function () {
      // $.delete("/api/pets/:id").then(function(data){
      //      console.log(data);
      // })
+          //  <img src="http://placehold.it/125x125" alt="Pet Image" class="img-thumbnail" class="img-fluid" class="list-inline-item">
 
 
 
