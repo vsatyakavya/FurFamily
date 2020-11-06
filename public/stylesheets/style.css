@@ -80,3 +80,13 @@ background-size: cover;
   position: relative;
   z-index: 1;
 }
+
+#quotebox{
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.day, .checklist{
+  padding-left: 0px;
+  padding-right: 0px;
+}
