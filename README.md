@@ -1,52 +1,92 @@
 # FurFamily
 
  ## Description
-  ___________________________________________________________________
-  This project is a quick and easy command line application for when you need to develop a README file for a project. Just type in 'node index.js' in the command line and follow the prompts!
-
-  ___________________________________________________________________
-  ## Table of Contents
-  ___________________________________________________________________
   
-  *[Usage](#Usage)</br>
-  *[Installation](#Installation)</br>
-  *[Contributors](#Contributors)</br>
-  *[Testing](#Testing)</br>
-  *[Github](#Github)</br>
-  *[Contact Me](#Contact)</br>
-  *[License](#License)</br>
+  This is a full stack application about pets.This applicatin can be used by any pet lovers to manage their pet details.Any pet lover using this application should be able to 
 
-  ___________________________________________________________________
-  ### Steps for installation (#Installation)
-  ___________________________________________________________________
-  Just one easy step for installation, just open your terminal in the READMeGenerator file and type in npm install in the terminal to install the dependencies, thats all!
+  * Create an account on furfamily
+  * Login using credentials provided while signing up
+  * Save your pet details
+  * Add as many pets as you have
+  * Delete pet
+  * Watch pet grooming videos
+  * Watch pet training videos
+  * Have a checklist of things to-do with the pets like feeding, grooming etc.
+  * View pet of the day
+  * Quote of the day
+  * Navigate to pet friendly websites
+
+
+
+
+
+  Table of contents | 
+  ------------ | 
+  [Description](#description) | 
+  [Technologies used](#technologies-used) | 
+  [Features](#features) | 
+  [Application sample webpages](#application-sample-webpages) | 
+  [Contributors](#contributors) | 
+  [Github Repository](#github-repository) | 
+  [Heroku Link](#heroku-link) | 
+  [Contact](#contact) | 
   
-  ___________________________________________________________________
-  ### (#Usage)
-  ___________________________________________________________________
-  This application is for developing an easy to read and user friendly tempelate for a README file for any project that you need!
 
-  Step-by-Step Tutorial:
-  https://drive.google.com/file/d/1ed8qgPinfrqQVO7xb72DsDJ1TEIa-wqx/view
 
-  ___________________________________________________________________
-  ### (#Contributors)
-  ___________________________________________________________________
+
+
+# Technologies used:
+* Front-end : HTML, CSS, BOOTSTRAP
+* Back-end :Javascript, Jquery, Express.js, Node.js, ES6, passport and sequelize(libraries), MySql Database
+* Deployed in Heroku
+
+# Features:
+
+* Create account and login
+* User Aunthentication system
+* User-friendly
+* CRUD operations for save, display and delete pet details
+* Random dog API
+* Quote of the day API
+* youtube videos API
+* Link to other pet friendly websites
+* Polished UI
+* MVC paradigm
+* Protecting database deatils using environmental variables
+  
+ 
+
+  # Application sample webpages
+
+![picture](Assets/login.png)
+
+
+![picture](Assets/welcomepage.png)
+
+
+![picture](Assets/videos.png)
+
+![picture](Assets/signup.png)
+
+
+  
+  # Contributors
+
   Mark Aguilar
+  satya kavya
+  Cristina Ruiz
+  Daniel Rodriguez
+  Devin McComb
 
-  ### (#Testing) processes
-  ___________________________________________________________________
-  Within eachelper file at the bottom is a commented out function for testing purposes, feel free to uncomment them out and poke around.
+ # Github Repository
+   https://github.com/cristinaruiz21/FurFamily
 
+# Heroku Link
+
+  # Contact
   ___________________________________________________________________
-  #### Check out my github!
-  ___________________________________________________________________
-  https://github.com/Mark4348 (#Contact)
-  ___________________________________________________________________
-  #### Shoot me an email:
-  ___________________________________________________________________
-  m_aguilar_2011@yahoo.com
-  ___________________________________________________________________
-  ### (#License)
-  ___________________________________________________________________
-  undefined
+ * m_aguilar_2011@yahoo.com
+ *  satyakavya24@gmail.com
+  
+
+  @copyright 2020
