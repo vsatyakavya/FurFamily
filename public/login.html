@@ -9,48 +9,48 @@
   <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
   <link href="stylesheets/style.css" rel="stylesheet">
   <style>
-    body{
+    body {
       background-image: url("./image/blackpaw2.jpg");
-      
-  background-repeat: no-repeat;
-  background-attachment: fixed;  
-  background-size: cover;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: cover;
     }
 
-  .container{
-    color: aliceblue;
-  }
-  #submit{
-    color:aliceblue;
-  }
   </style>
 </head>
 
 
 <body>
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <nav class="navbar navbar-expand-lg navbar-light bg-secondary">
     <a class="navbar-brand" href="/members" >Fur Family<span class="fas fa-paw"></span></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
   </nav>
-  
-    <div class="container-fluid">
-      <div class="navbar-header">
-      </div>
+
+  <div class="container-fluid">
+    <div class="navbar-header">
     </div>
+  </div>
   </nav>
+  
   <div class="container">
-    <div class="row">
-      <div class="col-md-6 col-md-offset-3">
-        <h2>Login Form</h2>
-        <form class="login">
-          <div class="form-group">
-            <label for="exampleInputEmail1">Email address</label>
+    <div class="row ">
+      <div id="loginCard"class="form-inline justify-content-center card col-md-6 mx-auto col-md-offset-3 text-dark ">
+        <div id="loginBody">
+        <div>
+          <img src="./image/furfamily.jpg">
+        </div>
+        <h2 class="text-center">Login</h2>
+        <h6 class="text-muted">Log in with your email and password</h6>
+        
+        <form class="login justify-content-center">
+          <div class="form-group justify-content-center">
+            <label for="exampleInputEmail1">Email address :</label>
             <input type="email" class="form-control" id="email-input" placeholder="Email">
           </div>
-          <div class="form-group">
-            <label for="exampleInputPassword1">Password</label>
+          <div class="form-group justify-content-center">
+            <label for="exampleInputPassword1">Enter Password:  </label>
             <input type="password" class="form-control" id="password-input" placeholder="Password">
           </div>
           <div style="display: none" id="alert" class="alert alert-danger" role="alert">
@@ -58,20 +58,25 @@
             <span class="sr-only">Error:</span> <span class="msg"></span>
           </div>
 
-          <button type="submit" class="btn btn-default" id ="submit">Login</button>
+          <button type="submit" class="btn btn-primary justify-content-center" id="submit">Login</button>
         </form>
         <br />
-        <p>Or sign up <a href="/signup">here</a></p>
+        <p class="text-muted">Or if you dont have an account sign up <a href="/signup">here</a></p>
       </div>
+    </div>
     </div>
   </div>
 
   <div class="card-footer text-muted text-center">
-    <a href="https://www.chewy.com/" target="_blank"><img src="pets/chewy.png" alt="chewy" style="width: 30px;height: 30px;"></a>
-    <a href="https://www.rover.com/" target="_blank"><img src="pets/rover.png" alt="rover" style="width: 30px;height: 30px;"></a>
+    <a href="https://www.chewy.com/" target="_blank"><img src="pets/chewy.png" alt="chewy"
+        style="width: 30px;height: 30px;"></a>
+    <a href="https://www.rover.com/" target="_blank"><img src="pets/rover.png" alt="rover"
+        style="width: 30px;height: 30px;"></a>
     Visit Our Partners
-    <a href="https://www.akc.org/" target="_blank"><img src="pets/akc.jpeg" alt="akc" style="width: 30px;height: 30px;"></a>
-    <a href="https://www.petinsurance.com/" target="_blank"><img src="pets/pet.png" alt="petinsurance" style="width: 30px;height: 30px;"></a>
+    <a href="https://www.akc.org/" target="_blank"><img src="pets/akc.jpeg" alt="akc"
+        style="width: 30px;height: 30px;"></a>
+    <a href="https://www.petinsurance.com/" target="_blank"><img src="pets/pet.png" alt="petinsurance"
+        style="width: 30px;height: 30px;"></a>
   </div>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
