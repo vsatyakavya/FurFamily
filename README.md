@@ -61,7 +61,7 @@
 ![picture](Assets/login.png)
 
 
-![picture](Assets/welcomepage.png)
+![picture](Assets/welcome.png)
 
 
 ![picture](Assets/videos.png)
@@ -86,7 +86,10 @@
   # Contact
   ___________________________________________________________________
  * m_aguilar_2011@yahoo.com
- *  satyakavya24@gmail.com
+ * satyakavya24@gmail.com
+ * cristinaruiz96@yahoo.com
+ * drod18@hotmail.com
+ * devinamccomb@gmail.com
   
 
   @copyright 2020
