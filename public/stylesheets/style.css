@@ -1,6 +1,6 @@
 form.signup,
 form.login {
-  margin-top: 50px;
+  margin-top: 25px;
 }
 
 #welcomeBanner {
@@ -22,4 +22,45 @@ input[type=checkbox] {
 
 input {
   margin:10px;
+}
+
+.backgroundimg {
+background-image: url("./image/paw-print-background.png");  
+background-repeat: no-repeat;
+background-attachment: fixed;  
+background-size: cover;
+}
+
+#loginCard {
+  margin-top: 30px;
+    background-size: cover;
+    height: 100%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    position: relative;
+    border-radius: 35px;
+}
+
+#signupCard {
+  margin-top: 30px;
+    background-size: cover;
+    height: 100%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    position: relative;
+    border-radius: 35px;
+}
+
+#loginBody {
+  width: 100%;
+  position: relative;
+  z-index: 1;
+}
+
+#signupBody {
+  width: 100%;
+  position: relative;
+  z-index: 1;
 }
