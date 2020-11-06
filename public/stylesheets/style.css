@@ -24,6 +24,22 @@ input {
   margin:10px;
 }
 
+#petform{
+  
+     height: 400px; 
+    margin-top: 50px;
+    margin-bottom: auto;
+    
+    
+     /* width: 50%; */
+    background-color: rgba(0,0,0,0.5) !important;
+    border-radius: 20px;
+    color :rgb(92, 216, 92);
+  
+}
+.form1{
+  margin-left: 20px;
+}
 .backgroundimg {
 background-image: url("./image/paw-print-background.png");  
 background-repeat: no-repeat;

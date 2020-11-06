@@ -34,9 +34,9 @@ $(document).ready(function () {
           const { pet, index } = props;
           const { id ,petName, petAge, petBreed } = pet;
           return $(/*html*/`
-       <div class="card-body" data-id=${id}>
-       <ul>
-       <div class="card text-white bg-info mb-12 shadow-lg rounded" style="max-width: 60rem;">
+       <div class="card-body justify-content-md-center" data-id=${id}>
+       <ul style="  padding: 0; list-style-type: none;">
+       <div class="card text-white bg-info mb-12 shadow-lg rounded " >
          <div class="card-body">
            
            <div class ="row">
@@ -50,7 +50,7 @@ $(document).ready(function () {
            <li class="list-inline-item" style="font-size:20px">Pet Breed : ${petBreed}</li>
            </div>
            <div class ="col-md-2">
-           <button class="btn btn-danger btn-sm" id="delete"  data-id = ${id}><span class="fas fa-trash"></span>Delete Pet</button>
+           <button class="btn btn-danger btn-sm" id="delete"  data-id = ${id}><span class="fas fa-trash-alt"></span> Delete Pet</button>
              </div>
          </div>
           </div>
