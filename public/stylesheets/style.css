@@ -1,7 +1,7 @@
 
 form.signup,
 form.login {
-  margin-top: 50px;
+  margin-top: 25px;
 }
 
 #welcomeBanner {
@@ -37,4 +37,69 @@ input {
 #grooming {
   padding-top: 20px;
   padding-bottom: 20px;
+#petform{
+  
+     height: 400px; 
+    margin-top: 50px;
+    margin-bottom: auto;
+    
+    
+     /* width: 50%; */
+    background-color: rgba(0,0,0,0.5) !important;
+    border-radius: 20px;
+    color :rgb(92, 216, 92);
+  
+}
+.form1{
+  margin-left: 20px;
+}
+.backgroundimg {
+background-image: url("./image/paw-print-background.png");  
+background-repeat: no-repeat;
+background-attachment: fixed;  
+background-size: cover;
+}
+
+#loginCard {
+  margin-top: 30px;
+    background-size: cover;
+    height: 100%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    position: relative;
+    border-radius: 35px;
+}
+
+#signupCard {
+  margin-top: 30px;
+    background-size: cover;
+    height: 100%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    position: relative;
+    border-radius: 35px;
+}
+
+#loginBody {
+  width: 100%;
+  position: relative;
+  z-index: 1;
+}
+
+#signupBody {
+  width: 100%;
+  position: relative;
+  z-index: 1;
+}
+
+#quotebox{
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.day, .checklist{
+  padding-left: 0px;
+  padding-right: 0px;
 }
