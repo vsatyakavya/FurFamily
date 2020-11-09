@@ -79,7 +79,7 @@
   Devin McComb
 
  # Github Repository
-   https://github.com/cristinaruiz21/FurFamily
+   https://github.com/vsatyakavya/FurFamily
 
 # Heroku Link
  https://fur-family-34.herokuapp.com/
